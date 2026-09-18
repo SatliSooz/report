@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Tahoma', 'Segoe UI', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  padding: 35px;
+  max-width: 650px;
+  width: 100%;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  font-size: 26px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.subtitle {
+  color: #aaa;
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.target-card {
+  background: rgba(0, 136, 204, 0.15);
+  border: 1px solid rgba(0, 136, 204, 0.4);
+  border-radius: 16px;
+  padding: 18px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.target-label {
+  font-size: 12px;
+  color: #4fc3f7;
+  margin-bottom: 6px;
+}
+
+.target-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 6px;
+  direction: ltr;
+}
+
+.target-link {
+  color: #4fc3f7;
+  font-size: 12px;
+  text-decoration: none;
+  direction: ltr;
+  display: inline-block;
+}
+
+.preview {
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 14px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.preview-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: #4fc3f7;
+  margin-bottom: 10px;
+  direction: ltr;
+}
+
+details summary {
+  cursor: pointer;
+  font-size: 13px;
+  color: #aaa;
+  padding: 8px 0;
+}
+
+details summary:hover {
+  color: #fff;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-size: 11px;
+  line-height: 1.7;
+  color: #ddd;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 12px;
+  border-radius: 8px;
+  margin-top: 10px;
+  max-height: 300px;
+  overflow-y: auto;
+  direction: ltr;
+  text-align: left;
+}
+
+button {
+  background: linear-gradient(135deg, #0088cc, #006699);
+  color: white;
+  border: none;
+  padding: 16px 30px;
+  font-size: 17px;
+  font-weight: bold;
+  border-radius: 50px;
+  cursor: pointer;
+  width: 100%;
+  transition: all 0.25s ease;
+  box-shadow: 0 8px 20px rgba(0, 136, 204, 0.3);
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(0, 136, 204, 0.5);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.note {
+  margin-top: 15px;
+  font-size: 12px;
+  color: #999;
+  text-align: center;
+  line-height: 1.7;
+}
+
+.note.warning {
+  color: #ffb74d;
+}
