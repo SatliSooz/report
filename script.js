@@ -1,35 +1,49 @@
 // ============ تنظیمات ============
 var CONFIG = {
   recipient: "abuse@telegram.org",
-  subject: "Reporting Channel for Hate Speech, Extremist Content, and Exploitation of a Minor's Image – @YouArPrick",
+  subject: "URGENT: Reporting Channel for Child Exploitation Image, Hate Speech, and Violent Content – @kosmadararzeshii",
   body: [
     "To the Telegram Trust & Safety Team,",
     "",
-    "I am reporting the channel @YouArPrick (https://t.me/YouArPrick) for violating Telegram's Terms of Service. This channel repeatedly publishes content that constitutes hate speech, incitement to violence, and exploitation of a minor.",
+    "I am reporting the channel @kosmadararzeshii (https://t.me/kosmadararzeshii) for severe and repeated violations of Telegram's Terms of Service, including the exploitation of a minor's image, hate speech, and incitement to violence.",
     "",
-    "1. Exploitation of a Minor's Image",
-    "The channel's profile picture uses the image of a 6-month-old infant girl in a degrading and abusive context. Using a child's image this way, without consent, for mockery or abuse is a serious violation and may constitute exploitation of a minor.",
+    "=== CRITICAL: EXPLOITATION OF A MINOR ===",
     "",
-    "2. Hate Speech and Incitement Against Public Figures",
+    "The channel's profile picture uses the image of a young child (approximately 6 months old) in a context of abuse and mistreatment. This image depicts a child being harmed, and it is being used publicly as the channel's identifying avatar. This constitutes serious exploitation of a minor and a violation of Telegram's policies on child safety. I urge the Trust & Safety team to treat this as a priority case and remove this image immediately.",
+    "",
+    "=== 1. Hate Speech and Incitement Against Public Figures ===",
+    "",
     "The channel repeatedly posts text containing severe insults, slurs, and degrading language targeting political figures. Examples:",
-    "https://t.me/YouArPrick/34",
-    "https://t.me/YouArPrick/32",
-    "https://t.me/YouArPrick/31",
-    "https://t.me/YouArPrick/18",
-    "https://t.me/YouArPrick/4",
-    "https://t.me/YouArPrick/9",
+    "https://t.me/kosmadararzeshii/34",
+    "https://t.me/kosmadararzeshii/32",
+    "https://t.me/kosmadararzeshii/31",
+    "https://t.me/kosmadararzeshii/18",
+    "https://t.me/kosmadararzeshii/4",
+    "https://t.me/kosmadararzeshii/9",
     "",
-    "3. Violent and Abusive Visual Content",
-    "The channel also posts GIFs containing graphic, abusive, and violent imagery intended to incite hatred and violence. Examples:",
-    "https://t.me/YouArPrick/6",
-    "https://t.me/YouArPrick/7",
-    "https://t.me/YouArPrick/25",
-    "https://t.me/YouArPrick/26",
-    "https://t.me/YouArPrick/30",
-    "https://t.me/YouArPrick/33",
+    "=== 2. Highly Violent Content ===",
     "",
-    "Request",
-    "I respectfully request that Telegram's Trust & Safety team review this channel and take appropriate action, including removal of the channel and/or the offending content, in accordance with Telegram's Terms of Service prohibiting exploitation of minors, hate speech, and incitement to violence.",
+    "The channel has published content containing extreme violence. A clear example is the following post, which shows very graphic and violent material:",
+    "https://t.me/kosmadararzeshii/49",
+    "",
+    "Other examples of violent and abusive visual content (GIFs with graphic imagery):",
+    "https://t.me/kosmadararzeshii/6",
+    "https://t.me/kosmadararzeshii/7",
+    "https://t.me/kosmadararzeshii/25",
+    "https://t.me/kosmadararzeshii/26",
+    "https://t.me/kosmadararzeshii/30",
+    "https://t.me/kosmadararzeshii/33",
+    "",
+    "=== Request ===",
+    "",
+    "I respectfully but urgently request that Telegram's Trust & Safety team:",
+    "",
+    "1. Immediately review this channel and the offending image in its profile picture.",
+    "2. Remove the child exploitation image from the channel's avatar and all related content.",
+    "3. Remove the violent post at https://t.me/kosmadararzeshii/49 and all other violent content.",
+    "4. Take appropriate action against the channel, including restriction or permanent ban, in accordance with Telegram's Terms of Service prohibiting exploitation of minors, hate speech, and incitement to violence.",
+    "",
+    "This channel poses an ongoing risk. I request that this report be treated with high priority.",
     "",
     "Thank you for your attention to this matter.",
     "",
@@ -40,7 +54,7 @@ var CONFIG = {
 
 // ============ وضعیت ============
 var sentCount = 0;
-var SENT_KEY = "report_sent_count_youarprick";
+var SENT_KEY = "report_sent_count_kosmadararzeshii";
 
 // ============ توابع ============
 
@@ -76,7 +90,6 @@ function sendReport() {
     localStorage.setItem(SENT_KEY, String(sentCount));
   } catch (e) {}
   updateCounter();
-
   setTimeout(function() {
     alert("اگر ایمیل باز شد، لطفاً دکمه Send را بزنید.\nمتشکریم که به حفظ امنیت تلگرام کمک می‌کنید.");
   }, 1500);
